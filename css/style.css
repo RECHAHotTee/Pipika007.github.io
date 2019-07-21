@@ -1,0 +1,89 @@
+#header {
+    width: 100%;
+    margin: 0 auto;
+    /*元素和外边距没有边距（上下左右）*/
+    text-align: center;
+}
+
+#header .title {
+    font: bold 50px Arial;
+    color: #776e65;
+    margin: 0 auto;
+}
+
+#header .author {
+    font: normal 18px Arial;
+    margin: 10px auto;
+    padding-left: 20%;
+    /*离左边内距20%的宽度 */
+}
+
+#header .wrapper {
+    display: flex;
+    /*取消div的默认换行*/
+    justify-content: space-between;
+    /*将内容两端显示*/
+    width: 500px;
+    font: bold 15px Arial;
+    margin: 0 auto;
+}
+
+#header .score-wrapper {
+    width: 100px;
+    background-color: #8f7a66;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+#header .score-wrapper #txt {
+    color: #d2c1c1;
+}
+
+#header .score-wrapper #score {
+    color: #fff;
+    font-size: 30px;
+    vertical-align: middle;
+    /*垂直方向居中*/
+}
+
+#header .newgame-wrapper #newGame {
+    display: block;
+    width: 100px;
+    background-color: #8f7a66;
+    text-decoration: none;
+    /*去下划线*/
+    padding: 13px;
+    border-radius: 6px;
+    color: #fff;
+    font: bold 15px Arial;
+}
+
+#header .newgame-wrapper #newGame:hover {
+    background-color: #bdac9c;
+}
+
+.grid-container{
+	width: 460px;
+	height: 460px;
+	background: #9c8978;
+	padding: 20px;
+	margin: 10px auto;
+	border-radius: 10px;
+	position: relative;/*因为内层div需要绝对定位，外层div必须使用其它的定位方式*/
+}
+
+.grid-container .grid-cell{
+	width: 100px;
+	height: 100px;
+	background-color: #b4a390;
+	border-radius: 6px;
+	position: absolute;
+}
+
+.grid-container .number-cell{
+    text-align: center;
+	border-radius: 6px;
+    font:bold 50px Arial;
+    line-height: 100px;
+    position: absolute;
+}
